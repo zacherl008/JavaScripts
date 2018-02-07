@@ -1,0 +1,1 @@
+A custom built LinkedList that implements an interface and extends an abstract class. Designed using generic <E> notation in order to accept various data types. Contains such functions as: add, addFirst, addLast, getFirst, get (at a certain index), firstIndexOf, lastIndexOf, remove (at a certain index), remove, contains, and set (at a certain index).
