@@ -10,11 +10,26 @@ package zacherl008_blackjack;
  * @author zacherl008
  */
 public class Player {
-    
-    Hand myHand = new Hand();
+    private Hand myHand = new Hand();
     private String name;
     
     public Player(String name){
         this.name = name;
+    }
+    
+    public String getName(){
+        return name;
+    }
+    public Hand getHand(){
+        return myHand;
+    }
+    
+    public void clearHand(){
+        myHand = new Hand();
+    }
+    
+    public void printMyHand(){
+        System.out.println(name + "'s Hand: ");
+        myHand.printHand();
     }
 }

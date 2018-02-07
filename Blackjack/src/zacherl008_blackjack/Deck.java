@@ -10,7 +10,6 @@ package zacherl008_blackjack;
  * @author zacherl008
  */
 public class Deck {
-    
     private Card[] myCards = new Card[52];
     private int nextCard = 0;
     
@@ -33,7 +32,6 @@ public class Deck {
     private void initDeck(){
         for(int i = 0; i < 52; i++){
             myCards[i] = new Card(ranks[i%13], suits[i/13]);
-
         }
     }
     
@@ -43,7 +41,12 @@ public class Deck {
         }
     }
     
-    private void shuffle(){
-        
+    private void shuffle(){        
+        for(int i = 0; i < 52; i++){
+            int indexRank = (int)(Math.random()*52);
+            Card tempRank = myCards[i];
+            myCards[i] = myCards[indexRank];
+            myCards[indexRank] = tempRank;
+        }
     }
 }

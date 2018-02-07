@@ -10,7 +10,6 @@ package zacherl008_blackjack;
  * @author zacherl008
  */
 public class Card {
-    
     private final String rank;
     private final String suit;
     
@@ -25,11 +24,6 @@ public class Card {
     
     public String getSuit(){
         return suit;
-    }
-    
-    public int getValue(){
-        //stub
-        return 0; //change this
     }
 }
 

@@ -5,18 +5,22 @@
  */
 package zacherl008_blackjack;
 
+import java.util.Scanner;
+
 /**
  *
  * @author zacherl008
  */
 public class Zacherl008_blackjack {
-
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Deck myDeck = new Deck();
-        myDeck.printDeck();
-    }
-    
+        System.out.println("How many players?: ");
+        Scanner scan = new Scanner(System.in);
+        int number = scan.nextInt();
+        Dealer dealer = new Dealer(number);
+        dealer.playHand();
+        dealer.askNewGame();
+    }   
 }
