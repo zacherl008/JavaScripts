@@ -1,0 +1,1 @@
+A simple script in order to light up an LED connected to pins 6 and 12 on a Raspberry Pi. This project also involved importing a JRE file library and setting up NetBeans with a remote platform in order to push code without a physical connection.
