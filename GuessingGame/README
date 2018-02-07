@@ -1,0 +1,1 @@
+A reptile themed guessing game featuring 11 different creatures. The creatures are created from an abstract class, with each containing their true name and three clues. Before each game, the array is shuffled. The player has the option to guess after each clue or continue, and then the option to receive a new animal and set of clues when the round ends.
