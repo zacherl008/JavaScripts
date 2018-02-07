@@ -15,15 +15,15 @@ public class Zacherl008_BinaryTree{
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        BinaryTree myTree = new BinaryTree();
+        //BinaryTree myTree = new BinaryTree();
         
-        myTree.insert(1);
-        myTree.insert(5);
-        myTree.insert(3);
-        myTree.insert(2);
-        myTree.insert(9);
+        //myTree.insert(1);
+        //myTree.insert(5);
+        //myTree.insert(3);
+        //myTree.insert(2);
+        //myTree.insert(9);
         
-        myTree.printTree();
+        //myTree.printTree();
         //myTree.inOrder();
         //System.out.println("");
         //myTree.preOrder();
@@ -31,7 +31,7 @@ public class Zacherl008_BinaryTree{
         //myTree.postOrder();
         //System.out.println("");
         //System.out.println(myTree.size());
-        System.out.println(myTree.contains(2));
+        //System.out.println(myTree.contains(2));
     }
     
     

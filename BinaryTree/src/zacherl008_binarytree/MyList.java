@@ -10,14 +10,6 @@ package zacherl008_binarytree;
  * @author zacherl008
  */
 public interface MyList<E> extends java.lang.Iterable {
-    
-    //make a data structure hierarchy, 3 main interfaces, list interface with all commands, 
-    //map interface, set interface, list different data structures that fit into each
-    //list any extra function thats extended with, stack has 2 extension functions: push and pop
-    //example of where each data type would be used, vector, deck, dq
-    //stack used for last in first out, 
-    //queue used for first in first out, a line of things trying to access program
-    
     public void add(E e); //adds a new element at the end of the list
     
     public void add (int index, E e); //adds element at specified index
@@ -50,5 +42,4 @@ public interface MyList<E> extends java.lang.Iterable {
   
     public int size(); //returns the number of elements in the list
         
-   
 }

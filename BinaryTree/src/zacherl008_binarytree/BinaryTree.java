@@ -11,20 +11,17 @@ import java.util.Iterator;
 /**
  *
  * @author kzacherl
- */
-//implement abstract list
+ *///
 //deleting something requires to delete and move everything below it
-//save reference to node to be deleted
-//set it to null
-//find left and right of the node to be deleted and call add function on them 
-//change to compareto and equals 
-
+//1) save reference to node to be deleted
+//2) set it to null
+//3) find left and right of the node to be deleted and call add function on them 
+//
 public class BinaryTree<E> extends MyAbstractList<E> {
     private Node root = null;
     public BinaryTree(){
         root = null;
     }
-    //code adapted from textbook section 6.4
     
     public boolean isEmpty(){
         return root == null;
@@ -140,7 +137,7 @@ public class BinaryTree<E> extends MyAbstractList<E> {
         node = null;
     }
     
-    //left, root, right
+    //root, left, right
     public void preOrder(){
         preOrder(root);
     }
@@ -165,6 +162,20 @@ public class BinaryTree<E> extends MyAbstractList<E> {
             inOrder(node.right);
         }
     }
+    
+    // left, right, root
+    public void postOrder(){
+        postOrder(root);
+    }
+    
+    private void postOrder(Node node){
+        if(node != null){
+            postOrder(node.left);
+            postOrder(node.right);
+            System.out.print(node.data + " ");
+        }
+    }
+    
     //Binary Tree Printer
     public void printTree(){
         System.out.print("maxLevel: " + getMaxLevel(root));
@@ -259,19 +270,6 @@ public class BinaryTree<E> extends MyAbstractList<E> {
             }
         }
         return true;
-    }
-    
-    // left, right, root
-    public void postOrder(){
-        postOrder(root);
-    }
-    
-    private void postOrder(Node node){
-        if(node != null){
-            postOrder(node.left);
-            postOrder(node.right);
-            System.out.print(node.data + " ");
-        }
     }
     
     @Override
